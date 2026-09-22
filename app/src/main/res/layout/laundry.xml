@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laundry"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#292929"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book a machine &amp; time slot"
+            android:textSize="10sp"
+            android:textColor="#99938D"/>
+
+        <!-- DATE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:layout_marginTop="18dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="7dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- TODAY -->
+
+                <TextView
+                    android:id="@+id/dateToday"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Today&#10;23&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/date_selected"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- DATE 24 -->
+
+                <TextView
+                    android:id="@+id/date24"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Mon&#10;24&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:background="@drawable/card_background"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- DATE 25 -->
+
+                <TextView
+                    android:id="@+id/date25"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Tue&#10;25&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:background="@drawable/card_background"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- DATE 26 -->
+
+                <TextView
+                    android:id="@+id/date26"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Wed&#10;26&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:background="@drawable/card_background"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- DATE 27 -->
+
+                <TextView
+                    android:id="@+id/date27"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Thu&#10;27&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:background="@drawable/card_background"
+                    android:layout_marginEnd="6dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <!-- DATE 28 -->
+
+                <TextView
+                    android:id="@+id/date28"
+                    android:layout_width="55dp"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="Fri&#10;28&#10;Aug"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:background="@drawable/card_background"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- AVAILABLE TIME -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available time slots"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:layout_marginTop="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="7dp">
+
+            <!-- 08:00 -->
+
+            <TextView
+                android:id="@+id/time0809"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="08:00 – 09:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 09:00 -->
+
+            <TextView
+                android:id="@+id/time0910"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="09:00 – 10:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 10:00 -->
+
+            <TextView
+                android:id="@+id/time1011"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="10:00 – 11:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 11:00 BOOKED -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="11:00 – 12:00&#10;Booked"
+                android:textSize="9sp"
+                android:textColor="#B4AEA8"
+                android:background="@drawable/booked_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- 12:00 -->
+
+            <TextView
+                android:id="@+id/time1213"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="12:00 – 13:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 13:00 -->
+
+            <TextView
+                android:id="@+id/time1314"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="13:00 – 14:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 14:00 -->
+
+            <TextView
+                android:id="@+id/time1415"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="14:00 – 15:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 15:00 -->
+
+            <TextView
+                android:id="@+id/time1516"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="15:00 – 16:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 16:00 BOOKED -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="16:00 – 17:00&#10;Booked"
+                android:textSize="9sp"
+                android:textColor="#B4AEA8"
+                android:background="@drawable/booked_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- 17:00 -->
+
+            <TextView
+                android:id="@+id/time1718"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="17:00 – 18:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 18:00 -->
+
+            <TextView
+                android:id="@+id/time1819"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="18:00 – 19:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <!-- 19:00 -->
+
+            <TextView
+                android:id="@+id/time1920"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="19:00 – 20:00&#10;Available"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+        </GridLayout>
+
+        <!-- MACHINES -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a machine"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:layout_marginTop="15dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/washer1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="▣  Washer 1&#10;     Washer"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/washer2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="▣  Washer 2&#10;     Washer"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/washer3"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="▣  Washer 3&#10;     Washer"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="▣  Washer 4&#10;     In use"
+                android:textSize="9sp"
+                android:textColor="#B4AEA8"
+                android:background="@drawable/booked_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/dryer1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="♨  Dryer 1&#10;     Dryer"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/dryer2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="♨  Dryer 2&#10;     Dryer"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:background="@drawable/card_background"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+        </GridLayout>
+
+        <!-- BOOKING SUMMARY -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/card_background"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking summary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#292929"/>
+
+            <TextView
+                android:id="@+id/summaryDate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="Date                              Sun 23 Aug"
+                android:textSize="8sp"
+                android:textColor="#77716B"/>
+
+            <TextView
+                android:id="@+id/summaryTime"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="Time                              Select a slot"
+                android:textSize="8sp"
+                android:textColor="#77716B"/>
+
+            <TextView
+                android:id="@+id/summaryMachine"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="Machine                         Select a machine"
+                android:textSize="8sp"
+                android:textColor="#77716B"/>
+
+            <Button
+                android:id="@+id/confirmBooking"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Confirm booking"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/confirm_background"/>
+
+        </LinearLayout>
+
+        <!-- MY BOOKINGS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My bookings"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="▣"
+                android:textColor="#08B982"
+                android:background="@drawable/bg_green_icon"/>
+
+            <TextView
+                android:id="@+id/bookingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="No booking yet"
+                android:textSize="9sp"
+                android:textColor="#77716B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="confirmed"
+                android:textSize="8sp"
+                android:textColor="#08B982"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

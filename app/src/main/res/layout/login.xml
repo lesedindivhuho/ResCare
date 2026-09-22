@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="30dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="9dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Res-Care"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#292929"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your residence, simplified"
+                    android:textSize="7sp"
+                    android:textColor="#AAA49E"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in to access your residential services."
+                android:textSize="9sp"
+                android:textColor="#99938D"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:hint="you@example.com"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:textColorHint="#C2BDB8"
+                android:singleLine="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/login_input_background"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="9sp"
+                android:textColor="#292929"
+                android:layout_marginBottom="5dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your password"
+                    android:textSize="9sp"
+                    android:textColor="#292929"
+                    android:textColorHint="#C2BDB8"
+                    android:singleLine="true"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="38dp"
+                    android:background="@drawable/login_input_background"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:text="◉"
+                    android:textSize="11sp"
+                    android:textColor="#AAA49E"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#00A875"
+            android:gravity="right"
+            android:layout_marginTop="8dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/login_button_background"
+            android:layout_marginTop="12dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to Res-Care? "
+                android:textSize="8sp"
+                android:textColor="#AAA49E"/>
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#00A875"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

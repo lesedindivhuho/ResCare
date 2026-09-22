@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- General text -->
+
+    <style name="FieldLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Input -->
+
+    <style name="Input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="SmallInput" parent="Input">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Navigation -->
+
+    <style name="NavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="NavIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#AAA49E</item>
+    </style>
+
+    <style name="NavIconActive" parent="NavIcon">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="NavText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/text_muted</item>
+    </style>
+
+    <style name="NavTextActive" parent="NavText">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Dates -->
+
+    <style name="DateBox">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:layout_marginEnd">6dp</item>
+    </style>
+
+    <style name="DateSelected" parent="DateBox">
+        <item name="android:background">@drawable/date_selected</item>
+    </style>
+
+    <style name="DateTop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#99938D</item>
+    </style>
+
+    <style name="DateNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#292929</item>
+    </style>
+
+    <style name="DateBottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">#99938D</item>
+    </style>
+
+    <!-- Laundry time -->
+
+    <style name="TimeSlot">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">57dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">9dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#292929</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="TimeSlotBooked" parent="TimeSlot">
+        <item name="android:background">@drawable/booked_background</item>
+        <item name="android:textColor">#B4AEA8</item>
+    </style>
+
+    <!-- Machines -->
+
+    <style name="MachineBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="MachineBoxDisabled" parent="MachineBox">
+        <item name="android:background">@drawable/booked_background</item>
+    </style>
+
+    <style name="MachineIcon">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#77716B</item>
+    </style>
+
+    <style name="MachineName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#292929</item>
+    </style>
+
+    <style name="MachineType">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">#AAA49E</item>
+    </style>
+
+    <style name="SummaryRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">#77716B</item>
+    </style>
+
+</resources>
