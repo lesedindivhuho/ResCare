@@ -121,4 +121,4 @@ The original application concept and design reference were produced with Readdy:
 | Tiisetso Mokoena | tiisetsomokoena900@gmail.com |
 | Thabiso Morebodi | Morebodithabiso@gmail.com |
 | Owam  Zililo | St10455219@Rcconnect.edu.za |
-| Ndivhuwo Nemaungani | nemaunganilesedi@gmail.com |
+| Ndivhuho Nemaungani | nemaunganilesedi@gmail.com |
