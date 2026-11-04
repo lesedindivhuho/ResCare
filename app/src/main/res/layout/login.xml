@@ -187,8 +187,11 @@
             android:background="@drawable/login_button_background"
             android:layout_marginTop="12dp"/>
 
-
-
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"

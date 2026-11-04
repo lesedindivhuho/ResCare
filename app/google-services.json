@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "663645729678",
+    "project_id": "rescare-6f516",
+    "storage_bucket": "rescare-6f516.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663645729678:android:2ec5866865f13be43c6adf",
+        "android_client_info": {
+          "package_name": "com.example.rescare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663645729678-n76ibt9j3t162ke1kernq0pkf640rs4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rescare",
+            "certificate_hash": "2bf639e52b5c752f30694ce053a77dd9b5d4cce2"
+          }
+        },
+        {
+          "client_id": "663645729678-pd13gq6t5u15f4k667g97dq32e27qg72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdGgQd_Y1f4UhkCefwr8Ux6Ha_VZJZISo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663645729678-pd13gq6t5u15f4k667g97dq32e27qg72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
