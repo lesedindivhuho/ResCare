@@ -5,122 +5,199 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
-    android:padding="20dp">
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/brand_name"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/text_primary"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tagline"
-        android:textSize="10sp"
-        android:textColor="@color/text_secondary"
-        android:layout_marginTop="3dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_back"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/text_primary"
-        android:layout_marginTop="30dp"/>
-
-    <!-- Laundry -->
-
-    <LinearLayout
-        android:id="@+id/laundryButton"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:background="@drawable/card_background"
-        android:layout_marginTop="20dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/laundry"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"/>
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_laundry_subtitle"
-            android:textSize="9sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginTop="4dp"/>
+            <!-- Header -->
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
-    <!-- Staff -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/staffButton"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:background="@drawable/card_background"
-        android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/greetingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/staff_directory"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"/>
+                    <TextView
+                        android:id="@+id/welcomeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/welcome_back"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_staff_subtitle"
-            android:textSize="9sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginTop="4dp"/>
+                </LinearLayout>
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/settingsButton"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="⚙"
+                    android:textSize="19sp"
+                    android:textColor="@color/text_primary"
+                    android:background="@drawable/bg_circle_button"
+                    android:contentDescription="@string/settings"
+                    android:clickable="true"
+                    android:focusable="true"/>
 
-    <!-- Settings -->
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/settingsButton"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:background="@drawable/card_background"
-        android:layout_marginTop="10dp">
+            <!-- Residence card -->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/settings"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/bg_hero">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_settings_subtitle"
-            android:textSize="9sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/brand_name"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/on_green"
+                    android:background="@drawable/bg_hero_badge"/>
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/your_residence"
+                    android:textSize="11sp"
+                    android:textColor="@color/on_green_muted"/>
+
+                <TextView
+                    android:id="@+id/residenceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/room_not_set"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/on_green"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tagline"
+                    android:textSize="11sp"
+                    android:textColor="@color/on_green_muted"/>
+
+            </LinearLayout>
+
+            <!-- Quick actions -->
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/quick_actions"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:layout_marginEnd="-5dp"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:id="@+id/quickLaundry"
+                    style="@style/QuickAction">
+
+                    <TextView style="@style/QuickActionIcon" android:text="▣"/>
+                    <TextView style="@style/QuickActionTitle" android:text="@string/laundry"/>
+                    <TextView style="@style/QuickActionSubtitle" android:text="@string/home_laundry_subtitle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quickMaintenance"
+                    style="@style/QuickAction">
+
+                    <TextView
+                        style="@style/QuickActionIcon"
+                        android:text="⚒"
+                        android:textColor="@color/orange_text"
+                        android:background="@drawable/bg_orange_icon"/>
+                    <TextView style="@style/QuickActionTitle" android:text="@string/maintenance"/>
+                    <TextView style="@style/QuickActionSubtitle" android:text="@string/home_maintenance_subtitle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quickStaff"
+                    style="@style/QuickAction">
+
+                    <TextView style="@style/QuickActionIcon" android:text="☏"/>
+                    <TextView style="@style/QuickActionTitle" android:text="@string/staff_directory"/>
+                    <TextView style="@style/QuickActionSubtitle" android:text="@string/home_staff_subtitle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quickEmergency"
+                    style="@style/QuickAction">
+
+                    <TextView
+                        style="@style/QuickActionIcon"
+                        android:text="✚"
+                        android:textColor="@color/red_text"
+                        android:background="@drawable/bg_red_icon"/>
+                    <TextView style="@style/QuickActionTitle" android:text="@string/nav_emergency"/>
+                    <TextView style="@style/QuickActionSubtitle" android:text="@string/home_emergency_subtitle"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+            <!-- Recent activity -->
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/recent_activity"/>
+
+            <LinearLayout
+                android:id="@+id/recentActivityContainer"
+                style="@style/ListCard">
+
+                <TextView
+                    android:id="@+id/noRecentActivityText"
+                    style="@style/EmptyText"
+                    android:text="@string/no_recent_activity"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/bottom_nav"/>
 
 </LinearLayout>

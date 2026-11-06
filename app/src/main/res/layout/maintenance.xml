@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/ScreenTitle"
+                android:text="@string/maintenance"/>
+
+            <TextView
+                style="@style/ScreenSubtitle"
+                android:text="@string/maintenance_subtitle"/>
+
+            <!-- Report form -->
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/report_an_issue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="@string/issue_category"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/categoryGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true"
+                    app:checkedChip="@+id/categoryPlumbing">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/categoryPlumbing"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_plumbing"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/categoryElectrical"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_electrical"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/categoryFurniture"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_furniture"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/categoryInternet"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_internet"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/categoryOther"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_other"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/issue_description"/>
+
+                <EditText
+                    android:id="@+id/issueDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minLines="3"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:hint="@string/issue_description_hint"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted"
+                    android:background="@drawable/bg_input"/>
+
+                <TextView
+                    android:id="@+id/submitRequestButton"
+                    style="@style/PrimaryButton"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/submit_request"/>
+
+            </LinearLayout>
+
+            <!-- My requests -->
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/my_requests"/>
+
+            <LinearLayout
+                android:id="@+id/requestsContainer"
+                style="@style/ListCard">
+
+                <TextView
+                    android:id="@+id/noRequestsText"
+                    style="@style/EmptyText"
+                    android:text="@string/no_requests"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/bottom_nav"/>
+
+</LinearLayout>

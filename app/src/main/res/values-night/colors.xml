@@ -20,5 +20,9 @@
     <color name="border">#333333</color>
 
     <color name="on_green">#FFFFFF</color>
+    <color name="on_green_muted">#D9FFFFFF</color>
+
+    <color name="red_soft">#3F1D1A</color>
+    <color name="red_text">#FF8A80</color>
 
 </resources>

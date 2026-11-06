@@ -1,8 +1,6 @@
 package com.example.rescare
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class StaffDirectoryActivity : AppCompatActivity() {
@@ -12,23 +10,6 @@ class StaffDirectoryActivity : AppCompatActivity() {
 
         setContentView(R.layout.staff)
 
-        findViewById<TextView>(
-            R.id.homeNav
-        ).setOnClickListener {
-
-            finish()
-        }
-
-        findViewById<TextView>(
-            R.id.laundryNav
-        ).setOnClickListener {
-
-            startActivity(
-                Intent(
-                    this,
-                    LaundryActivity::class.java
-                )
-            )
-        }
+        BottomNav.setup(this, BottomNav.Tab.STAFF)
     }
 }

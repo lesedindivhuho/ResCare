@@ -388,62 +388,6 @@
 
     </ScrollView>
 
-    <!-- navigation at the bottom -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="@color/surface"
-        android:elevation="5dp">
-
-        <TextView
-            android:id="@+id/homeNav"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/nav_home"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="@color/text_secondary" />
-
-        <TextView
-            android:id="@+id/laundryNav"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/laundry"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="@color/text_secondary" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/role_maintenance"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="@color/text_secondary" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/nav_staff"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="@color/green"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/nav_emergency"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="@color/text_secondary" />
-    </LinearLayout>
+    <include layout="@layout/bottom_nav"/>
 
 </LinearLayout>

@@ -47,9 +47,51 @@
     <string name="registration_failed">Registrasie het misluk: %1$s</string>
 
     <!-- Home -->
+    <string name="welcome_back_name">Welkom terug, %1$s</string>
+    <string name="good_morning">Goeiemôre</string>
+    <string name="good_afternoon">Goeiemiddag</string>
+    <string name="good_evening">Goeienaand</string>
+    <string name="your_residence">Jou koshuis</string>
+    <string name="room_building">Kamer %1$s · %2$s</string>
+    <string name="room_not_set">Kamerbesonderhede nog nie bygevoeg nie</string>
+    <string name="quick_actions">Vinnige aksies</string>
     <string name="home_laundry_subtitle">Bespreek \'n wasmasjien en tydgleuf</string>
+    <string name="home_maintenance_subtitle">Rapporteer \'n probleem in jou kamer</string>
     <string name="home_staff_subtitle">Kontak koshuispersoneel</string>
-    <string name="home_settings_subtitle">Taal en tema</string>
+    <string name="home_emergency_subtitle">Belangrike nommers</string>
+    <string name="recent_activity">Onlangse aktiwiteit</string>
+    <string name="no_recent_activity">Nog niks hier nie. Jou wasgoedbesprekings en instandhoudingsversoeke sal hier verskyn.</string>
+    <string name="sign_in_again">Meld asseblief weer aan</string>
+
+    <!-- Maintenance -->
+    <string name="maintenance">Instandhouding</string>
+    <string name="maintenance_subtitle">Rapporteer \'n probleem en volg herstelwerk</string>
+    <string name="report_an_issue">Rapporteer \'n probleem</string>
+    <string name="issue_category">Kategorie</string>
+    <string name="category_plumbing">Loodgieterswerk</string>
+    <string name="category_electrical">Elektries</string>
+    <string name="category_furniture">Meubels</string>
+    <string name="category_internet">Wi-Fi / Internet</string>
+    <string name="category_other">Ander</string>
+    <string name="issue_description">Beskryf die probleem</string>
+    <string name="issue_description_hint">bv. Die stortkraan in my kamer lek</string>
+    <string name="submit_request">Dien versoek in</string>
+    <string name="my_requests">My versoeke</string>
+    <string name="no_requests">Jy het nog geen probleme gerapporteer nie.</string>
+    <string name="request_submitted">Versoek ingedien</string>
+    <string name="request_failed">Kon nie versoek indien nie: %1$s</string>
+    <string name="describe_problem_error">Beskryf asseblief die probleem</string>
+    <string name="status_open">Oop</string>
+
+    <!-- Emergency -->
+    <string name="emergency_subtitle">Tik op \'n nommer om te bel</string>
+    <string name="emergency_note">In \'n lewensbedreigende noodgeval, bel dadelik 112 of 10111.</string>
+    <string name="emergency_police">Polisie (SAPD)</string>
+    <string name="emergency_ambulance_fire">Ambulans &amp; brandweer</string>
+    <string name="emergency_mobile">Noodnommer vanaf enige selfoon</string>
+    <string name="emergency_res_security">Koshuissekuriteit</string>
+    <string name="emergency_gbv">GBG-bevelsentrum</string>
+    <string name="call">Bel</string>
 
     <!-- Settings -->
     <string name="settings_appearance">Voorkoms</string>
@@ -84,6 +126,7 @@
     <string name="toast_select_slot">Kies asseblief \'n tydgleuf</string>
     <string name="toast_select_machine">Kies asseblief \'n masjien</string>
     <string name="booking_confirmed">Wasgoedbespreking bevestig</string>
+    <string name="booking_save_failed">Kon nie bespreking stoor nie: %1$s</string>
 
     <!-- Staff -->
     <string name="staff_subtitle">Kontak jou verblyfspan</string>
@@ -96,7 +139,7 @@
     <string name="hours_mon_fri">◷  Ma – Vr, 07:00 – 17:00</string>
     <string name="hours_daily">◷  Daagliks, 08:00 – 16:00</string>
     <string name="hours_mon_sat">◷  Ma – Sa, 08:00 – 18:00</string>
-    <string name="nav_home">⌂\nTuis</string>
+    <string name="nav_home">Tuis</string>
     <string name="nav_staff">Personeel</string>
     <string name="nav_emergency">Nood</string>
 </resources>

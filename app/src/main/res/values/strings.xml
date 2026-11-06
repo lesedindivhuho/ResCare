@@ -49,9 +49,51 @@
     <string name="registration_failed">Registration failed: %1$s</string>
 
     <!-- Home -->
+    <string name="welcome_back_name">Welcome back, %1$s</string>
+    <string name="good_morning">Good morning</string>
+    <string name="good_afternoon">Good afternoon</string>
+    <string name="good_evening">Good evening</string>
+    <string name="your_residence">Your residence</string>
+    <string name="room_building">Room %1$s · %2$s</string>
+    <string name="room_not_set">Room details not added yet</string>
+    <string name="quick_actions">Quick actions</string>
     <string name="home_laundry_subtitle">Book a washing machine and time slot</string>
+    <string name="home_maintenance_subtitle">Report a problem in your room</string>
     <string name="home_staff_subtitle">Contact residence staff</string>
-    <string name="home_settings_subtitle">Language and theme</string>
+    <string name="home_emergency_subtitle">Important numbers</string>
+    <string name="recent_activity">Recent activity</string>
+    <string name="no_recent_activity">Nothing here yet. Your laundry bookings and maintenance requests will show up here.</string>
+    <string name="sign_in_again">Please sign in again</string>
+
+    <!-- Maintenance -->
+    <string name="maintenance">Maintenance</string>
+    <string name="maintenance_subtitle">Report a problem and track repairs</string>
+    <string name="report_an_issue">Report an issue</string>
+    <string name="issue_category">Category</string>
+    <string name="category_plumbing">Plumbing</string>
+    <string name="category_electrical">Electrical</string>
+    <string name="category_furniture">Furniture</string>
+    <string name="category_internet">Wi-Fi / Internet</string>
+    <string name="category_other">Other</string>
+    <string name="issue_description">Describe the problem</string>
+    <string name="issue_description_hint">e.g. The shower tap in my room is leaking</string>
+    <string name="submit_request">Submit request</string>
+    <string name="my_requests">My requests</string>
+    <string name="no_requests">You haven\'t reported any issues yet.</string>
+    <string name="request_submitted">Request submitted</string>
+    <string name="request_failed">Could not submit request: %1$s</string>
+    <string name="describe_problem_error">Please describe the problem</string>
+    <string name="status_open">Open</string>
+
+    <!-- Emergency -->
+    <string name="emergency_subtitle">Tap a number to call</string>
+    <string name="emergency_note">In a life-threatening emergency, call 112 or 10111 straight away.</string>
+    <string name="emergency_police">Police (SAPS)</string>
+    <string name="emergency_ambulance_fire">Ambulance &amp; fire</string>
+    <string name="emergency_mobile">Emergency from any mobile</string>
+    <string name="emergency_res_security">Residence security</string>
+    <string name="emergency_gbv">GBV Command Centre</string>
+    <string name="call">Call</string>
 
     <!-- Settings -->
     <string name="settings_appearance">Appearance</string>
@@ -90,6 +132,7 @@
     <string name="toast_select_slot">Please select a time slot</string>
     <string name="toast_select_machine">Please select a machine</string>
     <string name="booking_confirmed">Laundry booking confirmed</string>
+    <string name="booking_save_failed">Could not save booking: %1$s</string>
 
     <!-- Staff -->
     <string name="staff_subtitle">Contact your accommodation team</string>
@@ -103,7 +146,7 @@
     <string name="hours_daily">◷  Daily, 08:00 – 16:00</string>
     <string name="hours_mon_sat">◷  Mon – Sat, 08:00 – 18:00</string>
     <string name="hours_always" translatable="false">◷  24 / 7</string>
-    <string name="nav_home">⌂\nHome</string>
+    <string name="nav_home">Home</string>
     <string name="nav_staff">Staff</string>
     <string name="nav_emergency">Emergency</string>
 </resources>

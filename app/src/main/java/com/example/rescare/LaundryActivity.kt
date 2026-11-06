@@ -1,7 +1,9 @@
 package com.example.rescare
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +24,7 @@ class LaundryActivity : AppCompatActivity() {
     )
 
     private var selectedDate = ""
+    private var selectedDateKey = ""
     private var selectedTime = ""
     private var selectedMachine = ""
 
@@ -32,17 +35,21 @@ class LaundryActivity : AppCompatActivity() {
     private lateinit var summaryDate: TextView
     private lateinit var summaryTime: TextView
     private lateinit var summaryMachine: TextView
-    private lateinit var bookingText: TextView
+    private lateinit var myBookingsContainer: LinearLayout
+    private lateinit var noBookingsText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.laundry)
 
+        BottomNav.setup(this, BottomNav.Tab.LAUNDRY)
+
         summaryDate = findViewById(R.id.summaryDate)
         summaryTime = findViewById(R.id.summaryTime)
         summaryMachine = findViewById(R.id.summaryMachine)
-        bookingText = findViewById(R.id.bookingText)
+        myBookingsContainer = findViewById(R.id.myBookingsContainer)
+        noBookingsText = findViewById(R.id.noBookingsText)
 
         summaryTime.text = getString(R.string.summary_time, getString(R.string.select_a_slot))
         summaryMachine.text = getString(R.string.summary_machine, getString(R.string.select_a_machine))
@@ -53,6 +60,22 @@ class LaundryActivity : AppCompatActivity() {
         setupTimes()
         setupMachines()
         setupConfirmButton()
+        loadMyBookings()
+    }
+
+    private fun loadMyBookings() {
+
+        UserRecords.loadRecent(this, UserRecords.BOOKINGS, 5) { bookings ->
+
+            myBookingsContainer.removeAllViews()
+            myBookingsContainer.addView(noBookingsText)
+
+            noBookingsText.visibility = if (bookings.isEmpty()) View.VISIBLE else View.GONE
+
+            for (booking in bookings) {
+                ActivityRows.addBooking(myBookingsContainer, booking)
+            }
+        }
     }
 
     private fun setupDates() {
@@ -63,6 +86,7 @@ class LaundryActivity : AppCompatActivity() {
         val dayNumber = SimpleDateFormat("d", locale)
         val monthName = SimpleDateFormat("MMM", locale)
         val summaryFormat = SimpleDateFormat("EEE d MMM", locale)
+        val keyFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
 
         val dateIds = listOf(
             R.id.dateToday,
@@ -80,12 +104,14 @@ class LaundryActivity : AppCompatActivity() {
             val date = calendar.time
             val dateView = findViewById<TextView>(id)
             val label = summaryFormat.format(date)
+            val key = keyFormat.format(date)
 
             val topLine = if (index == 0) getString(R.string.today) else dayName.format(date)
             dateView.text = "$topLine\n${dayNumber.format(date)}\n${monthName.format(date)}"
 
             if (index == 0) {
                 selectedDate = label
+                selectedDateKey = key
             }
 
             dateView.setOnClickListener {
@@ -106,6 +132,7 @@ class LaundryActivity : AppCompatActivity() {
                     selectedDateView = dateView
 
                     selectedDate = label
+                    selectedDateKey = key
 
                     summaryDate.text = getString(R.string.summary_date, selectedDate)
                 }
@@ -249,14 +276,43 @@ class LaundryActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            bookingText.text =
-                "$selectedDate\n$selectedTime • $selectedMachine"
+            val confirmButton = it
+            confirmButton.isEnabled = false
 
-            Toast.makeText(
+            val booking = mapOf(
+                "date" to selectedDate,
+                "dateKey" to selectedDateKey,
+                "time" to selectedTime,
+                "machine" to selectedMachine
+            )
+
+            UserRecords.add(
                 this,
-                getString(R.string.booking_confirmed),
-                Toast.LENGTH_SHORT
-            ).show()
+                UserRecords.BOOKINGS,
+                booking,
+                onSuccess = {
+
+                    confirmButton.isEnabled = true
+
+                    Toast.makeText(
+                        this,
+                        getString(R.string.booking_confirmed),
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    loadMyBookings()
+                },
+                onFailure = { e ->
+
+                    confirmButton.isEnabled = true
+
+                    Toast.makeText(
+                        this,
+                        getString(R.string.booking_save_failed, e.message),
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            )
         }
     }
 }

@@ -47,9 +47,51 @@
     <string name="registration_failed">Kwadiso e paletswe: %1$s</string>
 
     <!-- Home -->
+    <string name="welcome_back_name">O amogelwa gape, %1$s</string>
+    <string name="good_morning">Dumela</string>
+    <string name="good_afternoon">Dumela</string>
+    <string name="good_evening">Dumela</string>
+    <string name="your_residence">Bonno jwa gago</string>
+    <string name="room_building">Phaposi %1$s · %2$s</string>
+    <string name="room_not_set">Dintlha tsa phaposi ga di ise di tsenngwe</string>
+    <string name="quick_actions">Ditiro tsa ka bonako</string>
     <string name="home_laundry_subtitle">Beeletsa motšhine wa go tlhatswa le nako</string>
+    <string name="home_maintenance_subtitle">Bega bothata mo phaposing ya gago</string>
     <string name="home_staff_subtitle">Ikgolaganye le badiri ba bonno</string>
-    <string name="home_settings_subtitle">Puo le setaele</string>
+    <string name="home_emergency_subtitle">Dinomoro tsa botlhokwa</string>
+    <string name="recent_activity">Ditiragalo tsa bosheng</string>
+    <string name="no_recent_activity">Ga go na sepe jaanong. Dipeeletso tsa gago tsa botlhatswetso le dikopo tsa tlhokomelo di tla bonala fano.</string>
+    <string name="sign_in_again">Tsweetswee tsena gape</string>
+
+    <!-- Maintenance -->
+    <string name="maintenance">Tlhokomelo</string>
+    <string name="maintenance_subtitle">Bega bothata o bo o latele ditshiamiso</string>
+    <string name="report_an_issue">Bega bothata</string>
+    <string name="issue_category">Mofuta</string>
+    <string name="category_plumbing">Dipeipi</string>
+    <string name="category_electrical">Motlakase</string>
+    <string name="category_furniture">Fenitšhara</string>
+    <string name="category_internet">Wi-Fi / Inthanete</string>
+    <string name="category_other">Tse dingwe</string>
+    <string name="issue_description">Tlhalosa bothata</string>
+    <string name="issue_description_hint">sk. Thepe ya shawara mo phaposing ya me e a dutla</string>
+    <string name="submit_request">Romela kopo</string>
+    <string name="my_requests">Dikopo tsa me</string>
+    <string name="no_requests">Ga o ise o bege mathata ape.</string>
+    <string name="request_submitted">Kopo e rometswe</string>
+    <string name="request_failed">Ga go a kgonega go romela kopo: %1$s</string>
+    <string name="describe_problem_error">Tsweetswee tlhalosa bothata</string>
+    <string name="status_open">E bulegile</string>
+
+    <!-- Emergency -->
+    <string name="emergency_subtitle">Tobetsa nomoro go letsa</string>
+    <string name="emergency_note">Mo tshoganyetsong e e beang botshelo mo kotsing, letsetsa 112 kgotsa 10111 ka bonako.</string>
+    <string name="emergency_police">Mapodisi (SAPS)</string>
+    <string name="emergency_ambulance_fire">Ambulense &amp; mollo</string>
+    <string name="emergency_mobile">Tshoganyetso go tswa mo seleng epe</string>
+    <string name="emergency_res_security">Tshireletso ya bonno</string>
+    <string name="emergency_gbv">Lefelo la GBV</string>
+    <string name="call">Letsa</string>
 
     <!-- Settings -->
     <string name="settings_appearance">Ponalo</string>
@@ -84,6 +126,7 @@
     <string name="toast_select_slot">Tsweetswee tlhopha nako</string>
     <string name="toast_select_machine">Tsweetswee tlhopha motšhine</string>
     <string name="booking_confirmed">Peeletso ya go tlhatswa e netefaditswe</string>
+    <string name="booking_save_failed">Ga go a kgonega go boloka peeletso: %1$s</string>
 
     <!-- Staff -->
     <string name="staff_subtitle">Ikgolaganye le setlhopha sa bonno jwa gago</string>
@@ -96,7 +139,7 @@
     <string name="hours_mon_fri">◷  Mosupologo – Labotlhano, 07:00 – 17:00</string>
     <string name="hours_daily">◷  Letsatsi le letsatsi, 08:00 – 16:00</string>
     <string name="hours_mon_sat">◷  Mosupologo – Lamatlhatso, 08:00 – 18:00</string>
-    <string name="nav_home">⌂\nGae</string>
+    <string name="nav_home">Gae</string>
     <string name="nav_staff">Badiri</string>
     <string name="nav_emergency">Tshoganyetso</string>
 </resources>

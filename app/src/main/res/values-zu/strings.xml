@@ -47,9 +47,51 @@
     <string name="registration_failed">Ukubhalisa kwehlulekile: %1$s</string>
 
     <!-- Home -->
+    <string name="welcome_back_name">Siyakwamukela futhi, %1$s</string>
+    <string name="good_morning">Sawubona</string>
+    <string name="good_afternoon">Sawubona</string>
+    <string name="good_evening">Sawubona</string>
+    <string name="your_residence">Indawo yakho yokuhlala</string>
+    <string name="room_building">Igumbi %1$s · %2$s</string>
+    <string name="room_not_set">Imininingwane yegumbi ayikengezwa</string>
+    <string name="quick_actions">Izenzo ezisheshayo</string>
     <string name="home_laundry_subtitle">Bhukha umshini wokuwasha nesikhathi</string>
+    <string name="home_maintenance_subtitle">Bika inkinga egumbini lakho</string>
     <string name="home_staff_subtitle">Xhumana nabasebenzi bendawo yokuhlala</string>
-    <string name="home_settings_subtitle">Ulimi netimu</string>
+    <string name="home_emergency_subtitle">Izinombolo ezibalulekile</string>
+    <string name="recent_activity">Okwenzeke muva nje</string>
+    <string name="no_recent_activity">Akukho lutho okwamanje. Okubhukhile kokuwasha nezicelo zokulungisa kuzovela lapha.</string>
+    <string name="sign_in_again">Sicela ungene futhi</string>
+
+    <!-- Maintenance -->
+    <string name="maintenance">Ukulungisa</string>
+    <string name="maintenance_subtitle">Bika inkinga futhi ulandelele ukulungiswa</string>
+    <string name="report_an_issue">Bika inkinga</string>
+    <string name="issue_category">Uhlobo</string>
+    <string name="category_plumbing">Amapayipi</string>
+    <string name="category_electrical">Ugesi</string>
+    <string name="category_furniture">Ifenisha</string>
+    <string name="category_internet">I-Wi-Fi / I-inthanethi</string>
+    <string name="category_other">Okunye</string>
+    <string name="issue_description">Chaza inkinga</string>
+    <string name="issue_description_hint">isib. Umpompi weshawa egumbini lami uyavuza</string>
+    <string name="submit_request">Thumela isicelo</string>
+    <string name="my_requests">Izicelo zami</string>
+    <string name="no_requests">Awukabiki zinkinga okwamanje.</string>
+    <string name="request_submitted">Isicelo sithunyelwe</string>
+    <string name="request_failed">Ayikwazanga ukuthumela isicelo: %1$s</string>
+    <string name="describe_problem_error">Sicela uchaze inkinga</string>
+    <string name="status_open">Kuvuliwe</string>
+
+    <!-- Emergency -->
+    <string name="emergency_subtitle">Thepha inombolo ukuze ushaye</string>
+    <string name="emergency_note">Esimweni esiphuthumayo esisongela impilo, shayela u-112 noma u-10111 ngokushesha.</string>
+    <string name="emergency_police">Amaphoyisa (SAPS)</string>
+    <string name="emergency_ambulance_fire">I-ambulensi &amp; abacimi bomlilo</string>
+    <string name="emergency_mobile">Isimo esiphuthumayo kunoma iyiphi iselula</string>
+    <string name="emergency_res_security">Ezokuphepha zendawo yokuhlala</string>
+    <string name="emergency_gbv">Isikhungo se-GBV</string>
+    <string name="call">Shayela</string>
 
     <!-- Settings -->
     <string name="settings_appearance">Ukubukeka</string>
@@ -84,6 +126,7 @@
     <string name="toast_select_slot">Sicela ukhethe isikhathi</string>
     <string name="toast_select_machine">Sicela ukhethe umshini</string>
     <string name="booking_confirmed">Ukubhukha kokuwasha kuqinisekisiwe</string>
+    <string name="booking_save_failed">Ayikwazanga ukulondoloza ukubhukha: %1$s</string>
 
     <!-- Staff -->
     <string name="staff_subtitle">Xhumana nethimba lendawo yakho yokuhlala</string>
@@ -96,7 +139,7 @@
     <string name="hours_mon_fri">◷  UMsombuluko – ULwesihlanu, 07:00 – 17:00</string>
     <string name="hours_daily">◷  Nsuku zonke, 08:00 – 16:00</string>
     <string name="hours_mon_sat">◷  UMsombuluko – UMgqibelo, 08:00 – 18:00</string>
-    <string name="nav_home">⌂\nIkhaya</string>
+    <string name="nav_home">Ikhaya</string>
     <string name="nav_staff">Abasebenzi</string>
     <string name="nav_emergency">Okuphuthumayo</string>
 </resources>
