@@ -63,6 +63,15 @@
     <string name="no_recent_activity">Akukho lutho okwamanje. Okubhukhile kokuwasha nezicelo zokulungisa kuzovela lapha.</string>
     <string name="sign_in_again">Sicela ungene futhi</string>
 
+    <!-- Profile -->
+    <string name="profile">Iphrofayela</string>
+    <string name="profile_subtitle">Gcina imininingwane yakho isesikhathini ukuze abasebenzi bakuthole.</string>
+    <string name="save_changes">Londoloza izinguquko</string>
+    <string name="profile_saved">Iphrofayela ilondoloziwe</string>
+    <string name="first_name_required">Faka igama lakho</string>
+    <string name="signed_in_with_google">Ungene nge-Google</string>
+    <string name="signed_in_with_email">Ungene nge-imeyili</string>
+
     <!-- Maintenance -->
     <string name="maintenance">Ukulungisa</string>
     <string name="maintenance_subtitle">Bika inkinga futhi ulandelele ukulungiswa</string>
@@ -94,6 +103,13 @@
     <string name="call">Shayela</string>
 
     <!-- Settings -->
+    <string name="settings_account">I-akhawunti</string>
+    <string name="edit_profile">Hlela iphrofayela</string>
+    <string name="edit_profile_description">Igama, ifoni nemininingwane yegumbi</string>
+    <string name="sign_out">Phuma</string>
+    <string name="sign_out_confirm_title">Uyaphuma?</string>
+    <string name="sign_out_confirm_message">Kuzodingeka ungene futhi ukuze usebenzise i-ResCare.</string>
+    <string name="cancel">Khansela</string>
     <string name="settings_appearance">Ukubukeka</string>
     <string name="settings_dark_mode">Imodi emnyama</string>
     <string name="settings_dark_mode_description">Sebenzisa itimu emnyama kulo lonke uhlelo</string>

@@ -9,10 +9,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val signedIn = UserProfile.currentUser() != null
+
         startActivity(
             Intent(
                 this,
-                LoginActivity::class.java
+                if (signedIn) HomeActivity::class.java else LoginActivity::class.java
             )
         )
 

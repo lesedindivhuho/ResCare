@@ -63,6 +63,15 @@
     <string name="no_recent_activity">Ga go na sepe jaanong. Dipeeletso tsa gago tsa botlhatswetso le dikopo tsa tlhokomelo di tla bonala fano.</string>
     <string name="sign_in_again">Tsweetswee tsena gape</string>
 
+    <!-- Profile -->
+    <string name="profile">Porofaele</string>
+    <string name="profile_subtitle">Boloka dintlha tsa gago di le dintšhwa gore badiri ba go fitlhelele.</string>
+    <string name="save_changes">Boloka diphetogo</string>
+    <string name="profile_saved">Porofaele e bolokilwe</string>
+    <string name="first_name_required">Tsenya leina la gago</string>
+    <string name="signed_in_with_google">O tsene ka Google</string>
+    <string name="signed_in_with_email">O tsene ka imeile</string>
+
     <!-- Maintenance -->
     <string name="maintenance">Tlhokomelo</string>
     <string name="maintenance_subtitle">Bega bothata o bo o latele ditshiamiso</string>
@@ -94,6 +103,13 @@
     <string name="call">Letsa</string>
 
     <!-- Settings -->
+    <string name="settings_account">Akhaonto</string>
+    <string name="edit_profile">Fetola porofaele</string>
+    <string name="edit_profile_description">Leina, mogala le dintlha tsa phaposi</string>
+    <string name="sign_out">Tswa</string>
+    <string name="sign_out_confirm_title">O a tswa?</string>
+    <string name="sign_out_confirm_message">O tla tshwanela go tsena gape go dirisa ResCare.</string>
+    <string name="cancel">Khansela</string>
     <string name="settings_appearance">Ponalo</string>
     <string name="settings_dark_mode">Mokgwa o lefifi</string>
     <string name="settings_dark_mode_description">Dirisa setaele se se lefifi mo app yotlhe</string>

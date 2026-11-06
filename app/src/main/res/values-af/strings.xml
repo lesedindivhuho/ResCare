@@ -63,6 +63,15 @@
     <string name="no_recent_activity">Nog niks hier nie. Jou wasgoedbesprekings en instandhoudingsversoeke sal hier verskyn.</string>
     <string name="sign_in_again">Meld asseblief weer aan</string>
 
+    <!-- Profile -->
+    <string name="profile">Profiel</string>
+    <string name="profile_subtitle">Hou jou besonderhede op datum sodat personeel jou kan bereik.</string>
+    <string name="save_changes">Stoor veranderinge</string>
+    <string name="profile_saved">Profiel gestoor</string>
+    <string name="first_name_required">Voer jou voornaam in</string>
+    <string name="signed_in_with_google">Aangemeld met Google</string>
+    <string name="signed_in_with_email">Aangemeld met e-pos</string>
+
     <!-- Maintenance -->
     <string name="maintenance">Instandhouding</string>
     <string name="maintenance_subtitle">Rapporteer \'n probleem en volg herstelwerk</string>
@@ -94,6 +103,13 @@
     <string name="call">Bel</string>
 
     <!-- Settings -->
+    <string name="settings_account">Rekening</string>
+    <string name="edit_profile">Wysig profiel</string>
+    <string name="edit_profile_description">Naam, telefoon en kamerbesonderhede</string>
+    <string name="sign_out">Meld af</string>
+    <string name="sign_out_confirm_title">Meld af?</string>
+    <string name="sign_out_confirm_message">Jy sal weer moet aanmeld om ResCare te gebruik.</string>
+    <string name="cancel">Kanselleer</string>
     <string name="settings_appearance">Voorkoms</string>
     <string name="settings_dark_mode">Donker modus</string>
     <string name="settings_dark_mode_description">Gebruik \'n donker tema regdeur die app</string>

@@ -41,6 +41,18 @@ class HomeActivity : AppCompatActivity() {
             )
         }
 
+        findViewById<LinearLayout>(
+            R.id.residenceCard
+        ).setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    ProfileActivity::class.java
+                )
+            )
+        }
+
         val quickActions = mapOf(
             R.id.quickLaundry to BottomNav.Tab.LAUNDRY,
             R.id.quickMaintenance to BottomNav.Tab.MAINTENANCE,
@@ -55,13 +67,12 @@ class HomeActivity : AppCompatActivity() {
                 BottomNav.open(this, BottomNav.Tab.HOME, tab)
             }
         }
-
-        loadProfile()
     }
 
     override fun onResume() {
         super.onResume()
 
+        loadProfile()
         loadRecentActivity()
     }
 
@@ -99,9 +110,12 @@ class HomeActivity : AppCompatActivity() {
 
                 val room = profile.getString("room").orEmpty()
                 val building = profile.getString("building").orEmpty()
-                if (room.isNotBlank() && building.isNotBlank()) {
-                    residenceText.text = getString(R.string.room_building, room, building)
-                }
+                residenceText.text =
+                    if (room.isNotBlank() && building.isNotBlank()) {
+                        getString(R.string.room_building, room, building)
+                    } else {
+                        getString(R.string.room_not_set)
+                    }
             }
     }
 

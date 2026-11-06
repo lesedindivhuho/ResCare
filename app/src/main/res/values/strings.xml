@@ -65,6 +65,15 @@
     <string name="no_recent_activity">Nothing here yet. Your laundry bookings and maintenance requests will show up here.</string>
     <string name="sign_in_again">Please sign in again</string>
 
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="profile_subtitle">Keep your details up to date so staff can reach you.</string>
+    <string name="save_changes">Save changes</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="first_name_required">Enter your first name</string>
+    <string name="signed_in_with_google">Signed in with Google</string>
+    <string name="signed_in_with_email">Signed in with email</string>
+
     <!-- Maintenance -->
     <string name="maintenance">Maintenance</string>
     <string name="maintenance_subtitle">Report a problem and track repairs</string>
@@ -96,6 +105,13 @@
     <string name="call">Call</string>
 
     <!-- Settings -->
+    <string name="settings_account">Account</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="edit_profile_description">Name, phone and room details</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_confirm_title">Sign out?</string>
+    <string name="sign_out_confirm_message">You\'ll need to sign in again to use ResCare.</string>
+    <string name="cancel">Cancel</string>
     <string name="settings_appearance">Appearance</string>
     <string name="settings_dark_mode">Dark mode</string>
     <string name="settings_dark_mode_description">Use a dark theme across the app</string>
