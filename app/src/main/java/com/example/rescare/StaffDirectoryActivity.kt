@@ -13,6 +13,13 @@ class StaffDirectoryActivity : AppCompatActivity() {
         setContentView(R.layout.staff)
 
         findViewById<TextView>(
+            R.id.homeNav
+        ).setOnClickListener {
+
+            finish()
+        }
+
+        findViewById<TextView>(
             R.id.laundryNav
         ).setOnClickListener {
 

@@ -7,6 +7,9 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -52,61 +55,81 @@ class RegisterActivity : AppCompatActivity() {
 
                 Toast.makeText(
                     this,
-                    "Please complete all fields",
+                    getString(R.string.complete_all_fields),
                     Toast.LENGTH_SHORT
                 ).show()
 
                 return@setOnClickListener
             }
 
-            getSharedPreferences(
-                "ResCare",
-                MODE_PRIVATE
-            ).edit()
-                .putString(
-                    "firstName",
-                    firstName.text.toString()
-                )
-                .putString(
-                    "surname",
-                    surname.text.toString()
-                )
-                .putString(
-                    "email",
-                    email.text.toString()
-                )
-                .putString(
-                    "phone",
-                    phone.text.toString()
-                )
-                .putString(
-                    "room",
-                    room.text.toString()
-                )
-                .putString(
-                    "building",
-                    building.text.toString()
-                )
-                .putString(
-                    "password",
-                    password.text.toString()
-                )
-                .apply()
+            if (password.text.toString().length < 6) {
+                password.error = getString(R.string.password_too_short)
+                return@setOnClickListener
+            }
 
-            Toast.makeText(
-                this,
-                "Account created successfully",
-                Toast.LENGTH_SHORT
-            ).show()
+            val createButton = it
+            createButton.isEnabled = false
 
-            startActivity(
-                Intent(
+            val auth = FirebaseAuth.getInstance()
+
+            auth.createUserWithEmailAndPassword(
+                email.text.toString().trim(),
+                password.text.toString()
+            ).addOnSuccessListener { result ->
+
+                val profile = hashMapOf(
+                    "firstName" to firstName.text.toString().trim(),
+                    "surname" to surname.text.toString().trim(),
+                    "email" to email.text.toString().trim(),
+                    "phone" to phone.text.toString().trim(),
+                    "room" to room.text.toString().trim(),
+                    "building" to building.text.toString().trim(),
+                    "provider" to "password",
+                    "createdAt" to FieldValue.serverTimestamp()
+                )
+
+                FirebaseFirestore.getInstance()
+                    .collection("users")
+                    .document(result.user!!.uid)
+                    .set(profile)
+                    .addOnSuccessListener {
+
+                        Toast.makeText(
+                            this,
+                            getString(R.string.account_created),
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                        startActivity(
+                            Intent(
+                                this,
+                                HomeActivity::class.java
+                            )
+                        )
+
+                        finishAffinity()
+                    }
+                    .addOnFailureListener { e ->
+
+                        createButton.isEnabled = true
+
+                        Toast.makeText(
+                            this,
+                            getString(R.string.profile_save_failed, e.message),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+
+            }.addOnFailureListener { e ->
+
+                createButton.isEnabled = true
+
+                Toast.makeText(
                     this,
-                    LoginActivity::class.java
-                )
-            )
-
-            finish()
+                    getString(R.string.registration_failed, e.message),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
 
         findViewById<LinearLayout>(

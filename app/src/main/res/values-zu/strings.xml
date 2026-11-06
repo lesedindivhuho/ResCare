@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">ResCare</string>
+
+    <!-- Shared -->
+    <string name="tagline">Indawo yakho yokuhlala, yenziwe lula</string>
+    <string name="back">Emuva</string>
+    <string name="welcome_back">Siyakwamukela futhi</string>
+    <string name="laundry">Ukuwasha</string>
+    <string name="staff_directory">Uhlu lwabasebenzi</string>
+    <string name="settings">Izilungiselelo</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Ngena ukuze ufinyelele izinsiza zendawo yakho yokuhlala.</string>
+    <string name="email_address">Ikheli le-imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="password_hint">Faka iphasiwedi yakho</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="sign_in">Ngena</string>
+    <string name="new_to_rescare">"Umusha ku-Res-Care? "</string>
+    <string name="create_an_account">Vula i-akhawunti</string>
+    <string name="contact_admin">Sicela uxhumane nabaphathi bendawo yokuhlala.</string>
+    <string name="error_enter_email">Faka i-imeyili yakho</string>
+    <string name="error_enter_password">Faka iphasiwedi yakho</string>
+    <string name="login_successful">Ukungena kuphumelele</string>
+    <string name="google_login_successful">Ukungena nge-Google kuphumelele</string>
+    <string name="login_incorrect">I-imeyili noma iphasiwedi ayilungile</string>
+    <string name="google_sign_in_failed">Ukungena nge-Google kwehlulekile: %1$s</string>
+    <string name="google_no_token">Ukungena nge-Google kwehlulekile: alikho ithokheni ye-ID</string>
+    <string name="auth_failed">Ukuqinisekisa kwehlulekile: %1$s</string>
+    <string name="profile_save_failed">Ayikwazanga ukulondoloza iphrofayela: %1$s</string>
+    <string name="profile_load_failed">Ayikwazanga ukulayisha iphrofayela: %1$s</string>
+
+    <!-- Register -->
+    <string name="back_to_sign_in">Buyela ekungeneni</string>
+    <string name="register_title">Vula i-akhawunti yakho</string>
+    <string name="register_subtitle">Bhalisa imininingwane yakho yomuntu siqu\nneyendawo yokuhlala ukuze uqale.</string>
+    <string name="first_name">Igama</string>
+    <string name="first_name_hint">Igama</string>
+    <string name="surname">Isibongo</string>
+    <string name="phone_number">Inombolo yocingo</string>
+    <string name="room_number">Inombolo yegumbi</string>
+    <string name="building">Isakhiwo</string>
+    <string name="create_account">Vula i-akhawunti</string>
+    <string name="complete_all_fields">Sicela ugcwalise zonke izikhala</string>
+    <string name="password_too_short">Iphasiwedi kumele ibe nezinhlamvu okungenani ezi-6</string>
+    <string name="account_created">I-akhawunti ivulwe ngempumelelo</string>
+    <string name="registration_failed">Ukubhalisa kwehlulekile: %1$s</string>
+
+    <!-- Home -->
+    <string name="home_laundry_subtitle">Bhukha umshini wokuwasha nesikhathi</string>
+    <string name="home_staff_subtitle">Xhumana nabasebenzi bendawo yokuhlala</string>
+    <string name="home_settings_subtitle">Ulimi netimu</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Ukubukeka</string>
+    <string name="settings_dark_mode">Imodi emnyama</string>
+    <string name="settings_dark_mode_description">Sebenzisa itimu emnyama kulo lonke uhlelo</string>
+    <string name="settings_language">Ulimi</string>
+    <string name="language_system">Ulimi oluzenzakalelayo lwefoni</string>
+
+    <!-- Laundry -->
+    <string name="laundry_subtitle">Bhukha umshini &amp; isikhathi</string>
+    <string name="pick_a_date">Khetha usuku</string>
+    <string name="today">Namuhla</string>
+    <string name="available_time_slots">Izikhathi ezitholakalayo</string>
+    <string name="slot_available">Iyatholakala</string>
+    <string name="slot_booked">Ibhukhiwe</string>
+    <string name="choose_a_machine">Khetha umshini</string>
+    <string name="washer_number">Owokuwasha %1$d</string>
+    <string name="dryer_number">Owokomisa %1$d</string>
+    <string name="machine_washer">Umshini wokuwasha</string>
+    <string name="machine_dryer">Umshini wokomisa</string>
+    <string name="machine_in_use">Uyasetshenziswa</string>
+    <string name="booking_summary">Isifinyezo sokubhukha</string>
+    <string name="summary_date">"Usuku                             %1$s"</string>
+    <string name="summary_time">"Isikhathi                       %1$s"</string>
+    <string name="summary_machine">"Umshini                         %1$s"</string>
+    <string name="select_a_slot">Khetha isikhathi</string>
+    <string name="select_a_machine">Khetha umshini</string>
+    <string name="confirm_booking">Qinisekisa ukubhukha</string>
+    <string name="my_bookings">Engikubhukhile</string>
+    <string name="no_booking_yet">Akukho okubhukhiwe okwamanje</string>
+    <string name="booking_status_confirmed">kuqinisekisiwe</string>
+    <string name="toast_select_slot">Sicela ukhethe isikhathi</string>
+    <string name="toast_select_machine">Sicela ukhethe umshini</string>
+    <string name="booking_confirmed">Ukubhukha kokuwasha kuqinisekisiwe</string>
+
+    <!-- Staff -->
+    <string name="staff_subtitle">Xhumana nethimba lendawo yakho yokuhlala</string>
+    <string name="search_staff_hint">⌕  Sesha ngegama noma umsebenzi</string>
+    <string name="filter_all">Bonke</string>
+    <string name="role_caretaker">Umnakekeli</string>
+    <string name="role_laundry_staff">Abasebenzi bokuwasha</string>
+    <string name="role_maintenance">Ukulungisa</string>
+    <string name="role_security">Ezokuphepha</string>
+    <string name="hours_mon_fri">◷  UMsombuluko – ULwesihlanu, 07:00 – 17:00</string>
+    <string name="hours_daily">◷  Nsuku zonke, 08:00 – 16:00</string>
+    <string name="hours_mon_sat">◷  UMsombuluko – UMgqibelo, 08:00 – 18:00</string>
+    <string name="nav_home">⌂\nIkhaya</string>
+    <string name="nav_staff">Abasebenzi</string>
+    <string name="nav_emergency">Okuphuthumayo</string>
+</resources>

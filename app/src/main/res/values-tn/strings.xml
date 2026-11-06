@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">ResCare</string>
+
+    <!-- Shared -->
+    <string name="tagline">Bonno jwa gago, bo nolofaditswe</string>
+    <string name="back">Boela morago</string>
+    <string name="welcome_back">O amogelwa gape</string>
+    <string name="laundry">Botlhatswetso</string>
+    <string name="staff_directory">Lenaane la badiri</string>
+    <string name="settings">Ditlhophiso</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Tsena go fitlhelela ditirelo tsa bonno jwa gago.</string>
+    <string name="email_address">Aterese ya imeile</string>
+    <string name="password">Lefoko la sephiri</string>
+    <string name="password_hint">Tsenya lefoko la gago la sephiri</string>
+    <string name="forgot_password">O lebetse lefoko la sephiri?</string>
+    <string name="sign_in">Tsena</string>
+    <string name="new_to_rescare">"O mošwa mo Res-Care? "</string>
+    <string name="create_an_account">Bula akhaonto</string>
+    <string name="contact_admin">Tsweetswee ikgolaganye le botsamaisi jwa bonno.</string>
+    <string name="error_enter_email">Tsenya imeile ya gago</string>
+    <string name="error_enter_password">Tsenya lefoko la gago la sephiri</string>
+    <string name="login_successful">O tsene ka katlego</string>
+    <string name="google_login_successful">O tsene ka Google ka katlego</string>
+    <string name="login_incorrect">Imeile kgotsa lefoko la sephiri ga di a siama</string>
+    <string name="google_sign_in_failed">Go tsena ka Google go paletswe: %1$s</string>
+    <string name="google_no_token">Go tsena ka Google go paletswe: ga go na thokene ya ID</string>
+    <string name="auth_failed">Netefatso e paletswe: %1$s</string>
+    <string name="profile_save_failed">Ga go a kgonega go boloka porofaele: %1$s</string>
+    <string name="profile_load_failed">Ga go a kgonega go bula porofaele: %1$s</string>
+
+    <!-- Register -->
+    <string name="back_to_sign_in">Boela go tsena</string>
+    <string name="register_title">Bula akhaonto ya gago</string>
+    <string name="register_subtitle">Kwadisa dintlha tsa gago tsa botho le tsa bonno\ngore o simolole.</string>
+    <string name="first_name">Leina</string>
+    <string name="first_name_hint">Leina</string>
+    <string name="surname">Sefane</string>
+    <string name="phone_number">Nomoro ya mogala</string>
+    <string name="room_number">Nomoro ya phaposi</string>
+    <string name="building">Kago</string>
+    <string name="create_account">Bula akhaonto</string>
+    <string name="complete_all_fields">Tsweetswee tlatsa mafelo otlhe</string>
+    <string name="password_too_short">Lefoko la sephiri le tshwanetse go nna le ditlhaka di le 6 bonnye</string>
+    <string name="account_created">Akhaonto e butswe ka katlego</string>
+    <string name="registration_failed">Kwadiso e paletswe: %1$s</string>
+
+    <!-- Home -->
+    <string name="home_laundry_subtitle">Beeletsa motšhine wa go tlhatswa le nako</string>
+    <string name="home_staff_subtitle">Ikgolaganye le badiri ba bonno</string>
+    <string name="home_settings_subtitle">Puo le setaele</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Ponalo</string>
+    <string name="settings_dark_mode">Mokgwa o lefifi</string>
+    <string name="settings_dark_mode_description">Dirisa setaele se se lefifi mo app yotlhe</string>
+    <string name="settings_language">Puo</string>
+    <string name="language_system">Puo ya tlwaelo ya mogala</string>
+
+    <!-- Laundry -->
+    <string name="laundry_subtitle">Beeletsa motšhine &amp; nako</string>
+    <string name="pick_a_date">Tlhopha letlha</string>
+    <string name="today">Gompieno</string>
+    <string name="available_time_slots">Dinako tse di leng teng</string>
+    <string name="slot_available">E teng</string>
+    <string name="slot_booked">E beeleditswe</string>
+    <string name="choose_a_machine">Tlhopha motšhine</string>
+    <string name="washer_number">Setlhatswi %1$d</string>
+    <string name="dryer_number">Seomisi %1$d</string>
+    <string name="machine_washer">Setlhatswi</string>
+    <string name="machine_dryer">Seomisi</string>
+    <string name="machine_in_use">E a dirisiwa</string>
+    <string name="booking_summary">Kakaretso ya peeletso</string>
+    <string name="summary_date">"Letlha                            %1$s"</string>
+    <string name="summary_time">"Nako                              %1$s"</string>
+    <string name="summary_machine">"Motšhine                        %1$s"</string>
+    <string name="select_a_slot">Tlhopha nako</string>
+    <string name="select_a_machine">Tlhopha motšhine</string>
+    <string name="confirm_booking">Netefatsa peeletso</string>
+    <string name="my_bookings">Dipeeletso tsa me</string>
+    <string name="no_booking_yet">Ga go na peeletso jaanong</string>
+    <string name="booking_status_confirmed">e netefaditswe</string>
+    <string name="toast_select_slot">Tsweetswee tlhopha nako</string>
+    <string name="toast_select_machine">Tsweetswee tlhopha motšhine</string>
+    <string name="booking_confirmed">Peeletso ya go tlhatswa e netefaditswe</string>
+
+    <!-- Staff -->
+    <string name="staff_subtitle">Ikgolaganye le setlhopha sa bonno jwa gago</string>
+    <string name="search_staff_hint">⌕  Batla ka leina kgotsa tiro</string>
+    <string name="filter_all">Botlhe</string>
+    <string name="role_caretaker">Motlhokomedi</string>
+    <string name="role_laundry_staff">Badiri ba botlhatswetso</string>
+    <string name="role_maintenance">Tlhokomelo</string>
+    <string name="role_security">Tshireletso</string>
+    <string name="hours_mon_fri">◷  Mosupologo – Labotlhano, 07:00 – 17:00</string>
+    <string name="hours_daily">◷  Letsatsi le letsatsi, 08:00 – 16:00</string>
+    <string name="hours_mon_sat">◷  Mosupologo – Lamatlhatso, 08:00 – 18:00</string>
+    <string name="nav_home">⌂\nGae</string>
+    <string name="nav_staff">Badiri</string>
+    <string name="nav_emergency">Tshoganyetso</string>
+</resources>

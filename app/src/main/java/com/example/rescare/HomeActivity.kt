@@ -35,5 +35,17 @@ class HomeActivity : AppCompatActivity() {
                 )
             )
         }
+
+        findViewById<LinearLayout>(
+            R.id.settingsButton
+        ).setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    SettingsActivity::class.java
+                )
+            )
+        }
     }
 }

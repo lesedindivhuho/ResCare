@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">ResCare</string>
+
+    <!-- Shared -->
+    <string name="tagline">Jou koshuis, vereenvoudig</string>
+    <string name="back">Terug</string>
+    <string name="welcome_back">Welkom terug</string>
+    <string name="laundry">Wasgoed</string>
+    <string name="staff_directory">Personeelgids</string>
+    <string name="settings">Instellings</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Meld aan om toegang tot jou koshuisdienste te kry.</string>
+    <string name="email_address">E-posadres</string>
+    <string name="password">Wagwoord</string>
+    <string name="password_hint">Voer jou wagwoord in</string>
+    <string name="forgot_password">Wagwoord vergeet?</string>
+    <string name="sign_in">Meld aan</string>
+    <string name="new_to_rescare">"Nuut by Res-Care? "</string>
+    <string name="create_an_account">Skep \'n rekening</string>
+    <string name="contact_admin">Kontak asseblief die koshuisadministrasie.</string>
+    <string name="error_enter_email">Voer jou e-pos in</string>
+    <string name="error_enter_password">Voer jou wagwoord in</string>
+    <string name="login_successful">Suksesvol aangemeld</string>
+    <string name="google_login_successful">Suksesvol met Google aangemeld</string>
+    <string name="login_incorrect">Verkeerde e-pos of wagwoord</string>
+    <string name="google_sign_in_failed">Google-aanmelding het misluk: %1$s</string>
+    <string name="google_no_token">Google-aanmelding het misluk: geen ID-token nie</string>
+    <string name="auth_failed">Verifikasie het misluk: %1$s</string>
+    <string name="profile_save_failed">Kon nie profiel stoor nie: %1$s</string>
+    <string name="profile_load_failed">Kon nie profiel laai nie: %1$s</string>
+
+    <!-- Register -->
+    <string name="back_to_sign_in">Terug na aanmelding</string>
+    <string name="register_title">Skep jou rekening</string>
+    <string name="register_subtitle">Registreer jou persoonlike en verblyf-\nbesonderhede om te begin.</string>
+    <string name="first_name">Voornaam</string>
+    <string name="first_name_hint">Naam</string>
+    <string name="surname">Van</string>
+    <string name="phone_number">Telefoonnommer</string>
+    <string name="room_number">Kamernommer</string>
+    <string name="building">Gebou</string>
+    <string name="create_account">Skep rekening</string>
+    <string name="complete_all_fields">Vul asseblief alle velde in</string>
+    <string name="password_too_short">Wagwoord moet minstens 6 karakters wees</string>
+    <string name="account_created">Rekening suksesvol geskep</string>
+    <string name="registration_failed">Registrasie het misluk: %1$s</string>
+
+    <!-- Home -->
+    <string name="home_laundry_subtitle">Bespreek \'n wasmasjien en tydgleuf</string>
+    <string name="home_staff_subtitle">Kontak koshuispersoneel</string>
+    <string name="home_settings_subtitle">Taal en tema</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Voorkoms</string>
+    <string name="settings_dark_mode">Donker modus</string>
+    <string name="settings_dark_mode_description">Gebruik \'n donker tema regdeur die app</string>
+    <string name="settings_language">Taal</string>
+    <string name="language_system">Foon se verstektaal</string>
+
+    <!-- Laundry -->
+    <string name="laundry_subtitle">Bespreek \'n masjien &amp; tydgleuf</string>
+    <string name="pick_a_date">Kies \'n datum</string>
+    <string name="today">Vandag</string>
+    <string name="available_time_slots">Beskikbare tydgleuwe</string>
+    <string name="slot_available">Beskikbaar</string>
+    <string name="slot_booked">Bespreek</string>
+    <string name="choose_a_machine">Kies \'n masjien</string>
+    <string name="washer_number">Wasmasjien %1$d</string>
+    <string name="dryer_number">Droër %1$d</string>
+    <string name="machine_washer">Wasmasjien</string>
+    <string name="machine_dryer">Droër</string>
+    <string name="machine_in_use">In gebruik</string>
+    <string name="booking_summary">Besprekingsopsomming</string>
+    <string name="summary_date">"Datum                             %1$s"</string>
+    <string name="summary_time">"Tyd                               %1$s"</string>
+    <string name="summary_machine">"Masjien                         %1$s"</string>
+    <string name="select_a_slot">Kies \'n tydgleuf</string>
+    <string name="select_a_machine">Kies \'n masjien</string>
+    <string name="confirm_booking">Bevestig bespreking</string>
+    <string name="my_bookings">My besprekings</string>
+    <string name="no_booking_yet">Nog geen bespreking nie</string>
+    <string name="booking_status_confirmed">bevestig</string>
+    <string name="toast_select_slot">Kies asseblief \'n tydgleuf</string>
+    <string name="toast_select_machine">Kies asseblief \'n masjien</string>
+    <string name="booking_confirmed">Wasgoedbespreking bevestig</string>
+
+    <!-- Staff -->
+    <string name="staff_subtitle">Kontak jou verblyfspan</string>
+    <string name="search_staff_hint">⌕  Soek volgens naam of rol</string>
+    <string name="filter_all">Almal</string>
+    <string name="role_caretaker">Opsigter</string>
+    <string name="role_laundry_staff">Wasgoedpersoneel</string>
+    <string name="role_maintenance">Instandhouding</string>
+    <string name="role_security">Sekuriteit</string>
+    <string name="hours_mon_fri">◷  Ma – Vr, 07:00 – 17:00</string>
+    <string name="hours_daily">◷  Daagliks, 08:00 – 16:00</string>
+    <string name="hours_mon_sat">◷  Ma – Sa, 08:00 – 18:00</string>
+    <string name="nav_home">⌂\nTuis</string>
+    <string name="nav_staff">Personeel</string>
+    <string name="nav_emergency">Nood</string>
+</resources>

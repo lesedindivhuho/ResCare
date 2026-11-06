@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "663645729678-pj4s2kda44dd7kqimetfl9hri7veq8gk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rescare",
+            "certificate_hash": "1a196680e9f3a09b287a89ca019f403f2a99773f"
+          }
+        },
+        {
           "client_id": "663645729678-pd13gq6t5u15f4k667g97dq32e27qg72.apps.googleusercontent.com",
           "client_type": 3
         }

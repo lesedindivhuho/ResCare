@@ -1,3 +1,109 @@
 <resources>
     <string name="app_name">ResCare</string>
+
+    <!-- Shared -->
+    <string name="brand_name" translatable="false">Res-Care</string>
+    <string name="tagline">Your residence, simplified</string>
+    <string name="back">Back</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="laundry">Laundry</string>
+    <string name="staff_directory">Staff Directory</string>
+    <string name="settings">Settings</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Sign in to access your residential services.</string>
+    <string name="email_address">Email address</string>
+    <string name="email_hint" translatable="false">you@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="new_to_rescare">"New to Res-Care? "</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="contact_admin">Please contact residence administration.</string>
+    <string name="error_enter_email">Enter your email</string>
+    <string name="error_enter_password">Enter your password</string>
+    <string name="login_successful">Login successful</string>
+    <string name="google_login_successful">Google login successful</string>
+    <string name="login_incorrect">Incorrect email or password</string>
+    <string name="google_sign_in_failed">Google sign in failed: %1$s</string>
+    <string name="google_no_token">Google sign in failed: no ID token</string>
+    <string name="auth_failed">Authentication failed: %1$s</string>
+    <string name="profile_save_failed">Could not save profile: %1$s</string>
+    <string name="profile_load_failed">Could not load profile: %1$s</string>
+
+    <!-- Register -->
+    <string name="back_to_sign_in">Back to sign in</string>
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">Register your personal and accommodation\ndetails to get started.</string>
+    <string name="first_name">First name</string>
+    <string name="first_name_hint">Name</string>
+    <string name="surname">Surname</string>
+    <string name="phone_number">Phone number</string>
+    <string name="room_number">Room number</string>
+    <string name="building">Building</string>
+    <string name="create_account">Create account</string>
+    <string name="complete_all_fields">Please complete all fields</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+    <string name="account_created">Account created successfully</string>
+    <string name="registration_failed">Registration failed: %1$s</string>
+
+    <!-- Home -->
+    <string name="home_laundry_subtitle">Book a washing machine and time slot</string>
+    <string name="home_staff_subtitle">Contact residence staff</string>
+    <string name="home_settings_subtitle">Language and theme</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_dark_mode_description">Use a dark theme across the app</string>
+    <string name="settings_language">Language</string>
+    <string name="language_system">Phone\'s default language</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_setswana" translatable="false">Setswana</string>
+    <string name="language_isizulu" translatable="false">isiZulu</string>
+    <string name="language_afrikaans" translatable="false">Afrikaans</string>
+
+    <!-- Laundry -->
+    <string name="laundry_subtitle">Book a machine &amp; time slot</string>
+    <string name="pick_a_date">Pick a date</string>
+    <string name="today">Today</string>
+    <string name="available_time_slots">Available time slots</string>
+    <string name="slot_available">Available</string>
+    <string name="slot_booked">Booked</string>
+    <string name="choose_a_machine">Choose a machine</string>
+    <string name="washer_number">Washer %1$d</string>
+    <string name="dryer_number">Dryer %1$d</string>
+    <string name="machine_washer">Washer</string>
+    <string name="machine_dryer">Dryer</string>
+    <string name="machine_in_use">In use</string>
+    <string name="booking_summary">Booking summary</string>
+    <string name="summary_date">"Date                              %1$s"</string>
+    <string name="summary_time">"Time                              %1$s"</string>
+    <string name="summary_machine">"Machine                         %1$s"</string>
+    <string name="select_a_slot">Select a slot</string>
+    <string name="select_a_machine">Select a machine</string>
+    <string name="confirm_booking">Confirm booking</string>
+    <string name="my_bookings">My bookings</string>
+    <string name="no_booking_yet">No booking yet</string>
+    <string name="booking_status_confirmed">confirmed</string>
+    <string name="toast_select_slot">Please select a time slot</string>
+    <string name="toast_select_machine">Please select a machine</string>
+    <string name="booking_confirmed">Laundry booking confirmed</string>
+
+    <!-- Staff -->
+    <string name="staff_subtitle">Contact your accommodation team</string>
+    <string name="search_staff_hint">⌕  Search by name or role</string>
+    <string name="filter_all">All</string>
+    <string name="role_caretaker">Caretaker</string>
+    <string name="role_laundry_staff">Laundry Staff</string>
+    <string name="role_maintenance">Maintenance</string>
+    <string name="role_security">Security</string>
+    <string name="hours_mon_fri">◷  Mon – Fri, 07:00 – 17:00</string>
+    <string name="hours_daily">◷  Daily, 08:00 – 16:00</string>
+    <string name="hours_mon_sat">◷  Mon – Sat, 08:00 – 18:00</string>
+    <string name="hours_always" translatable="false">◷  24 / 7</string>
+    <string name="nav_home">⌂\nHome</string>
+    <string name="nav_staff">Staff</string>
+    <string name="nav_emergency">Emergency</string>
 </resources>

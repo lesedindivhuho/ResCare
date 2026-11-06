@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FCF9F6">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,16 +27,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Staff Directory"
-                    android:textColor="#202020"
+                    android:text="@string/staff_directory"
+                    android:textColor="@color/text_primary"
                     android:textStyle="bold"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact your accommodation team"
-                    android:textColor="#999999"
+                    android:text="@string/staff_subtitle"
+                    android:textColor="@color/text_secondary"
                     android:textSize="9sp" />
 
             </LinearLayout>
@@ -45,8 +45,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:hint="⌕  Search by name or role"
+            android:hint="@string/search_staff_hint"
             android:textSize="10sp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
             android:paddingStart="12dp"
             android:singleLine="true"
             android:background="@drawable/bg_search"
@@ -64,46 +66,57 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="42dp"
+                    android:layout_width="wrap_content"
+                    android:minWidth="42dp"
                     android:layout_height="25dp"
-                    android:text="All"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/filter_all"
                     android:gravity="center"
                     android:textSize="9sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:background="@drawable/bg_filter_selected" />
 
                 <TextView
-                    android:layout_width="65dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:text="Caretaker"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/role_caretaker"
                     android:gravity="center"
                     android:textSize="8sp"
-                    android:textColor="#777777" />
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
-                    android:layout_width="60dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:text="Laundry"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/laundry"
                     android:gravity="center"
                     android:textSize="8sp"
-                    android:textColor="#777777" />
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:text="Maintenance"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/role_maintenance"
                     android:gravity="center"
                     android:textSize="8sp"
-                    android:textColor="#777777" />
+                    android:textColor="@color/text_secondary" />
 
                 <TextView
-                    android:layout_width="55dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:text="Security"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/role_security"
                     android:gravity="center"
                     android:textSize="8sp"
-                    android:textColor="#777777" />
+                    android:textColor="@color/text_secondary" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -124,7 +137,7 @@
             android:paddingEnd="18dp"
             android:paddingBottom="10dp">
 
-            <!-- Staff Card 1 -->
+            <!-- Thabo Mokoena -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -143,20 +156,20 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginStart="9dp">
-<!--Thabo mokoena-->
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mr. Thabo Mokoena"
                             android:textStyle="bold"
-                            android:textColor="#333333"
+                            android:textColor="@color/text_primary"
                             android:textSize="10sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Caretaker"
-                            android:textColor="#008E6A"
+                            android:text="@string/role_caretaker"
+                            android:textColor="@color/green_text"
                             android:textSize="7sp"
                             android:padding="4dp"
                             android:background="@drawable/bg_role_green" />
@@ -166,9 +179,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
-                    android:text="◷  Mon – Fri, 07:00 – 17:00"
+                    android:text="@string/hours_mon_fri"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical"
                     android:paddingStart="8dp"
                     android:background="@drawable/bg_info"
@@ -179,7 +192,7 @@
                     android:layout_height="27dp"
                     android:text="⌕  0822222564"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
                 <TextView
@@ -187,12 +200,12 @@
                     android:layout_height="27dp"
                     android:text="✉  caretaker@sunnyvale.example"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
             </LinearLayout>
 
-            <!--Ms priya naidoo-->
+            <!-- Priya Naidoo -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -217,14 +230,14 @@
                             android:layout_height="wrap_content"
                             android:text="Ms. Priya Naidoo"
                             android:textStyle="bold"
-                            android:textColor="#333333"
+                            android:textColor="@color/text_primary"
                             android:textSize="10sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Laundry Staff"
-                            android:textColor="#008E6A"
+                            android:text="@string/role_laundry_staff"
+                            android:textColor="@color/green_text"
                             android:textSize="7sp"
                             android:padding="4dp"
                             android:background="@drawable/bg_role_green" />
@@ -234,9 +247,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
-                    android:text="◷  Daily, 08:00 – 16:00"
+                    android:text="@string/hours_daily"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical"
                     android:paddingStart="8dp"
                     android:background="@drawable/bg_info"
@@ -247,7 +260,7 @@
                     android:layout_height="27dp"
                     android:text="0823456789"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
                 <TextView
@@ -255,12 +268,12 @@
                     android:layout_height="27dp"
                     android:text="✉  laundry@sunnyvale.example"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
             </LinearLayout>
 
-            <!-- Dvaid -->
+            <!-- David van Wyk -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -274,14 +287,14 @@
                     android:layout_height="wrap_content"
                     android:text="  Mr. David van Wyk"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maintenance"
-                    android:textColor="#008E6A"
+                    android:text="@string/role_maintenance"
+                    android:textColor="@color/green_text"
                     android:textSize="7sp"
                     android:padding="4dp"
                     android:background="@drawable/bg_role_green"
@@ -290,9 +303,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
-                    android:text="◷  Mon – Sat, 08:00 – 18:00"
+                    android:text="@string/hours_mon_sat"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical"
                     android:paddingStart="8dp"
                     android:background="@drawable/bg_info"
@@ -303,7 +316,7 @@
                     android:layout_height="27dp"
                     android:text="0826756756"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
                 <TextView
@@ -311,12 +324,12 @@
                     android:layout_height="27dp"
                     android:text="✉  maintenance@sunnyvale.example"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
             </LinearLayout>
 
-            <!-- Learto -->
+            <!-- Lerato Khumalo -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -329,14 +342,14 @@
                     android:layout_height="wrap_content"
                     android:text="▢  Ms. Lerato Khumalo"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Security"
-                    android:textColor="#A46B00"
+                    android:text="@string/role_security"
+                    android:textColor="@color/orange_text"
                     android:textSize="7sp"
                     android:padding="4dp"
                     android:background="@drawable/bg_role_orange"
@@ -345,9 +358,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
-                    android:text="◷  24 / 7"
+                    android:text="@string/hours_always"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical"
                     android:paddingStart="8dp"
                     android:background="@drawable/bg_info"
@@ -358,7 +371,7 @@
                     android:layout_height="27dp"
                     android:text="0765433454"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
                 <TextView
@@ -366,7 +379,7 @@
                     android:layout_height="27dp"
                     android:text="✉  security@sunnyvale.example"
                     android:textSize="8sp"
-                    android:textColor="#777777"
+                    android:textColor="@color/text_secondary"
                     android:gravity="center_vertical" />
 
             </LinearLayout>
@@ -381,63 +394,56 @@
         android:layout_height="55dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="#FFFFFF"
+        android:background="@color/surface"
         android:elevation="5dp">
 
         <TextView
+            android:id="@+id/homeNav"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="⌂\nHome"
+            android:text="@string/nav_home"
             android:gravity="center"
             android:textSize="8sp"
-            android:textColor="#999999" />
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/laundryNav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/laundry"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:textColor="@color/text_secondary" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Laundry"
+            android:text="@string/role_maintenance"
             android:gravity="center"
             android:textSize="8sp"
-            android:textColor="#999999" />
+            android:textColor="@color/text_secondary" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Maintenance"
+            android:text="@string/nav_staff"
             android:gravity="center"
             android:textSize="8sp"
-            android:textColor="#999999" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Staff"
-            android:gravity="center"
-            android:textSize="8sp"
-            android:textColor="#00B878"
+            android:textColor="@color/green"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Emergency"
+            android:text="@string/nav_emergency"
             android:gravity="center"
             android:textSize="8sp"
-            android:textColor="#999999" />
-        <TextView
-            android:id="@+id/laundryNav"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Laundry"
-            android:textSize="8sp"
-            android:textColor="#999999" />
+            android:textColor="@color/text_secondary" />
     </LinearLayout>
 
 </LinearLayout>

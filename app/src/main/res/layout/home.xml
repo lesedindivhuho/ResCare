@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Res-Care"
+        android:text="@string/brand_name"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/text_primary"/>
@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your residence, simplified"
+        android:text="@string/tagline"
         android:textSize="10sp"
         android:textColor="@color/text_secondary"
         android:layout_marginTop="3dp"/>
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome back"
+        android:text="@string/welcome_back"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/text_primary"
@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laundry"
+            android:text="@string/laundry"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"/>
@@ -56,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book a washing machine and time slot"
+            android:text="@string/home_laundry_subtitle"
             android:textSize="9sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="4dp"/>
@@ -78,7 +78,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Staff Directory"
+            android:text="@string/staff_directory"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"/>
@@ -86,7 +86,37 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact residence staff"
+            android:text="@string/home_staff_subtitle"
+            android:textSize="9sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Settings -->
+
+    <LinearLayout
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="@drawable/card_background"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_settings_subtitle"
             android:textSize="9sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="4dp"/>
